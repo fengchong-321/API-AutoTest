@@ -1,0 +1,8 @@
+@Test
+public void testNormal() {
+    DBClient.of().deleteForTable(${table}).id(${id});
+
+    ${param_bean} param = get${param_bean}(ParamBuilder.buidler()${builder-str});
+
+    HttpResponse resp = HttpClient.doPost("${url}", param);
+}

@@ -1,0 +1,4 @@
+rootProject.name = 'fc'
+include 'web-demo'
+findProject(':web-demo')?.name = 'fc'
+
